@@ -16,6 +16,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Samuel/git/TrainJava/TrainGUI/bin/sqlite-jdbc-3.42.0.0(2).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Samuel/git/TrainJava/TrainGUI/sqlite-jdbc-3.42.0.0(2).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

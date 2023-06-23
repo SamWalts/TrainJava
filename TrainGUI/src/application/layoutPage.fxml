@@ -18,11 +18,11 @@
             <Image url="@cartoonMountains.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="trainLayoutImage" fitHeight="291.0" fitWidth="497.0" layoutX="12.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="trainLayoutImage" fitHeight="291.0" fitWidth="497.0" layoutX="12.0" layoutY="92.0" onDragDropped="#handleDrop" onMouseDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="generateButtonsButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#generateButtonsButton" text="Generate Buttons" />
       <Button fx:id="undoButton" layoutX="526.0" layoutY="330.0" mnemonicParsing="false" text="Undo" />
-      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="526.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
-      <Rectangle fx:id="square" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="536.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="33.0">
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" layoutX="526.0" layoutY="184.0" onDragDetected="#handleDragDetection" onMouseDragReleased="#handleDrop" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+      <Rectangle fx:id="square" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="536.0" layoutY="45.0" onDragDetected="#handleDragDetection" stroke="BLACK" strokeType="INSIDE" width="33.0">
          <fill>
             <RadialGradient centerX="0.7983425414364641" centerY="0.43364928909952605" cycleMethod="REFLECT" focusDistance="-0.29885057471264376" radius="0.5">
                <stops>
