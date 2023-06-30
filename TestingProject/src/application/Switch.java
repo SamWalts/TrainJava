@@ -10,17 +10,15 @@ public class Switch {
     private int startPositionX = 50;
     private int startPositionY = 50;
     private int width = 10;
-    
-    
-    private int height = 20;
+    private int height = 25;
 
     public Switch(Pane root) {
         createDraggableSwitch(root);
     }
-
+// This constructor is used in LayoutController.java
     private Rectangle createDraggableSwitch(Pane root) {
         rectangle = new Rectangle(startPositionX, startPositionY, width, height);
-        rectangle.setStroke(Color.BLACK);
+        rectangle.setStroke(Color.GREEN);
         rectangle.setStrokeWidth(2);
 
         DraggableMaker draggableMaker = new DraggableMaker();
@@ -56,7 +54,15 @@ public class Switch {
     public int getStartPositionY() {
         return startPositionY;
     }
-    public void removeSwitch(Pane root) {
+    public void removeStation(Pane root) {
         root.getChildren().remove(rectangle);
     }
+	public void setHeight(double height) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setWidth(double width) {
+		// TODO Auto-generated method stub
+		
+	}
 }
