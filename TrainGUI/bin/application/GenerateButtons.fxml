@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GenerateButtonsController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@cartoonMountains.jpg" />
+         </image>
+      </ImageView>
+      <Spinner fx:id="stationSpinner" layoutX="14.0" layoutY="221.0" prefHeight="136.0" prefWidth="171.0" />
+      <Label layoutX="117.0" layoutY="14.0" text="Generate Buttons Page">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="switchSpinner" layoutX="397.0" layoutY="221.0" prefHeight="136.0" prefWidth="171.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="183.0" prefHeight="35.0" prefWidth="171.0" text="Stations">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="397.0" layoutY="183.0" prefHeight="35.0" prefWidth="171.0" text="Switches" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    <Button layoutX="516.0" layoutY="359.0" mnemonicParsing="false" onAction="#submitSwitches" text="Submit" />
+      <Button layoutX="130.0" layoutY="358.0" mnemonicParsing="false" onAction="#submitStations" prefHeight="26.0" prefWidth="54.0" text="Submit" />
+      <Button layoutX="502.0" layoutY="15.0" mnemonicParsing="false" onAction="#layoutPage" prefHeight="35.0" prefWidth="81.0" text="Layout Page" />
+      <Button layoutX="16.0" layoutY="15.0" mnemonicParsing="false" onAction="#homePage" prefHeight="35.0" prefWidth="91.0" text="Back to home" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="136.0" layoutX="12.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+      <Label fx:id="stationLabel" alignment="CENTER" blendMode="SRC_ATOP" layoutX="14.0" layoutY="221.0" prefHeight="136.0" prefWidth="149.0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="136.0" layoutX="394.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+      <Label fx:id="switchLabel" alignment="CENTER" blendMode="SRC_ATOP" layoutX="397.0" layoutY="221.0" prefHeight="136.0" prefWidth="149.0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <Button fx:id="fileChooser" layoutX="15.0" layoutY="101.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="43.0" prefWidth="149.0" text="Choose Image" />
+      <Label fx:id="imagePath" layoutX="14.0" layoutY="144.0" prefHeight="43.0" prefWidth="413.0" text="File Name and Path for Train Layout" />
+      <Button layoutX="178.0" layoutY="101.0" mnemonicParsing="false" onAction="#submitImage" prefHeight="43.0" prefWidth="149.0" text="Save" />
+   </children>
+</AnchorPane>

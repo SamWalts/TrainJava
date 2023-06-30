@@ -15,7 +15,7 @@ public class Station {
     public Station(Pane root) {
         createDraggableStation(root);
     }
-
+// This constructor is used in LayoutController.java
     private Rectangle createDraggableStation(Pane root) {
         rectangle = new Rectangle(startPositionX, startPositionY, width, height);
         rectangle.setStroke(Color.GREEN);
@@ -57,4 +57,12 @@ public class Station {
     public void removeStation(Pane root) {
         root.getChildren().remove(rectangle);
     }
+	public void setHeight(double height) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setWidth(double width) {
+		// TODO Auto-generated method stub
+		
+	}
 }
