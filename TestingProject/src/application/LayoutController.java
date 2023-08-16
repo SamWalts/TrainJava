@@ -99,7 +99,7 @@ public class LayoutController implements Initializable {
                         break;
                     }
                 }
-            } else if (stations.contains(rectangle)) {
+            } else if (stations.contains(rectangle)) {			// Sets the stations to same width as the switches.
                 for (Station stationObj : stations) {
                     if (stationObj.getRectangle() == rectangle) {
                         // Update the station object with new width and height
@@ -134,10 +134,12 @@ public class LayoutController implements Initializable {
     
  //TODO: Must have the new values update inside of the lists
     //TODO: Must use something like getLocationOnPane or some shit.
+    //TODO: boundsInParentProperty. So make a Box, place Image in it, and get the relative information from bound in property
+    //https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Node.html#getBoundsInParent()
     public void saveSliderButtonClicked() {
         double[] sliderValues = getSliderValues();
         for (Node shape : sharedList) {
-            applySliderValues(shape, sliderValues[1], sliderValues[0]);
+            applySliderValues(shape, sliderValues[1], sliderValues[0]); 
         }
     }
 

@@ -1,5 +1,7 @@
 package application;
 
+import javafx.scene.control.SplitPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -12,11 +14,11 @@ public class Switch {
     private int width = 10;
     private int height = 25;
 
-    public Switch(Pane root) {
-        createDraggableSwitch(root);
+    public Switch(AnchorPane anchorPane) {
+        createDraggableSwitch(anchorPane);
     }
 // This constructor is used in LayoutController.java
-    private Rectangle createDraggableSwitch(Pane root) {
+    private Rectangle createDraggableSwitch(AnchorPane anchorPane) {
         rectangle = new Rectangle(startPositionX, startPositionY, width, height);
         rectangle.setStroke(Color.GREEN);
         rectangle.setStrokeWidth(2);
