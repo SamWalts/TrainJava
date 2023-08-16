@@ -1,5 +1,7 @@
 package application;
 
+import javafx.scene.control.SplitPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -12,11 +14,11 @@ public class Station {
     private int width = 10;
     private int height = 25;
 
-    public Station(Pane root) {
-        createDraggableStation(root);
+    public Station(AnchorPane anchorPane) {
+        createDraggableStation(anchorPane);
     }
 // This constructor is used in LayoutController.java
-    private Rectangle createDraggableStation(Pane root) {
+    private Rectangle createDraggableStation(AnchorPane anchorPane) {
         rectangle = new Rectangle(startPositionX, startPositionY, width, height);
         rectangle.setStroke(Color.GREEN);
         rectangle.setStrokeWidth(2);
